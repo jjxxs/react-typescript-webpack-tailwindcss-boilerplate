@@ -1,0 +1,8 @@
+{
+  "appTitle": "My Counter App",
+  "mainView": {
+    "currentCount": "Current count",
+    "increment": "Increment",
+    "decrement": "Decrement"
+  }
+}

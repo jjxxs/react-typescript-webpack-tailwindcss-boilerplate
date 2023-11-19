@@ -1,0 +1,8 @@
+{
+  "appTitle": "Meine Zähler-App",
+  "mainView": {
+    "currentCount": "Aktueller Zählerstand",
+    "increment": "Erhöhen",
+    "decrement": "Verringern"
+  }
+}
