@@ -14,9 +14,9 @@
     "url": "github:jjxxs/react-typescript-webpack-tailwindcss-boilerplate"
   },
   "scripts": {
-    "clean-win": "if exist dist rmdir /s /q dist",
+    "clean": "rimraf dist",
     "serve": "webpack-dev-server --mode development --open",
-    "build": "npm run clean-win && webpack --mode production"
+    "build": "npm run clean && webpack --mode production"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -76,6 +76,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
-    "@typescript-eslint/parser": "^6.11.0"
+    "@typescript-eslint/parser": "^6.11.0",
+    "rimraf": "^5.0.5"
   }
 }

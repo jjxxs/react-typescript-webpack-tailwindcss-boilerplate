@@ -112,4 +112,7 @@ const developmentDefaults = {
   },
 };
 
-module.exports = [/*productionDefaults,*/ developmentDefaults];
+module.exports = (env, argv) => {
+  if (argv.mode === "production") return productionDefaults;
+  return developmentDefaults;
+};
