@@ -33,4 +33,4 @@ Requests to `/api/v1` will be proxied to `http://localhost:8080`.
 
 ## Production
 1. Run `npm run build` to build the application
-2. The compiled application will be in the `dist` folder
+2. The compiled & minified application will be in the `dist` folder
