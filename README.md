@@ -1,5 +1,5 @@
 # react-typescript-webpack-tailwindcss-boilerplate
-A boilerplate for React, Typescript, Webpack and TailwindCSS:
+A boilerplate for a React, TypeScript, Webpack and TailwindCSS application:
 - **Build:** TypeScript, Webpack
 - **Linting:** ESLint
 - **Styling:** TailwindCSS
@@ -33,3 +33,4 @@ Requests to `/api/v1` will be proxied to `http://localhost:8080`.
 
 ## Production
 1. Run `npm run build` to build the application
+2. The compiled application will be in the `dist` folder
