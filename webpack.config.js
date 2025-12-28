@@ -66,21 +66,25 @@ const webpackBase = {
       directory: path.join(__dirname, "dist"),
     },
     compress: true,
-    proxy: {
-      "api/v1": "http://localhost:8080",
-    },
+    proxy: [
+      {
+        context: ["/api/v1"],
+        target: "http://localhost:8080",
+      },
+    ],
     historyApiFallback: {
       rewrites: [
         { from: /.*main.js$/, to: "/main.js" },
         { from: /.*main.js.map$/, to: "/main.js.map" },
       ],
     },
-    onBeforeSetupMiddleware: (devServer) => {
+    setupMiddlewares: (middlewares, devServer) => {
       if (!devServer) throw new Error("webpack-dev-server is not defined");
       devServer.app.use((req, res, next) => {
         console.log(`[${req.method}] ${req.url}`);
         next();
       });
+      return middlewares;
     },
   },
 };

@@ -20,7 +20,7 @@ As well as some useful utilities:
 - loglevel
 - ...
 
-***Dependencies last updated: 2023-11-19***
+***Dependencies last updated: 2025-12-28***
 
 ## Development
 1. Clone the repository
