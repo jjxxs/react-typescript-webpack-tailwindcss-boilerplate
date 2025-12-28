@@ -32,7 +32,7 @@ export const initTranslations = () => {
         escapeValue: false,
       },
     })
-    .then((_) => {
+    .then(() => {
       document.title = i18n.t("appTitle");
       _initialized = true;
       log.info(`Translations initialized in ${performance.now() - start}ms`);
